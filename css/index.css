@@ -1,3 +1,10 @@
+@font-face{
+    font-family:'Porter sans';
+    src: url('../assets/fonts/porter_sans_block/porter-sans-inline-block.otf') format('opentype');
+    font-weight: normal;
+    font-size:normal;
+}
+
 body, html{
     margin: 0;
     padding: 0;
@@ -6,24 +13,37 @@ body, html{
 
 .hero{
     height: 100vh; /*Full Screen height*/
-    background-image: url('//assets/images/homePageHeader.png');
+    background-image: url('../assets/images/homePageHeader.png');
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #e51728;
+    align-items: flex-start;
+    justify-content: flex-end;
     text-align:left;
-    padding: 20px;
+    padding: 50px;
+    text-shadow: none !important;
 }
 
 .hero h1{
+    font-family:'Porter Sans', sans-serif;
     font-size: 3rem;
+    font-weight: bold;
+    color: #e51728;
+    text-transform: uppercase;
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
     margin: 0;
 }
 
 .hero p{
+    font-family:'Porter Sans', sans-serif;
     font-size: 1.5rem;
+    font-weight:bold;
+    color: #45016d;
+    text-transform: uppercase;
+    /*I'd desperately trying to make it so that this text doesn't inherit the shadow from the heading, but nothings working :( */
+    text-shadow: none !important;
+    filter: none !important;
+    box-shadow: none !important;
     margin: 10px 0;
 }
