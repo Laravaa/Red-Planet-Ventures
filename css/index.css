@@ -5,10 +5,62 @@
     font-size:normal;
 }
 
+@font-face{
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight:normal;
+}
+
+@font-face{
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight:normal;
+}
+
 body, html{
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color:rgba (0,0,0,0.8);
+    padding:15px 0;
+    text-align:center;
+    z-index:1000;
+
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li{
+    display:inline;
+}
+
+.navbar ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: medium;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover{
+    color: #e51728;
 }
 
 .hero{
@@ -27,23 +79,24 @@ body, html{
 
 .hero h1{
     font-family:'Porter Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: bold;
     color: #e51728;
     text-transform: uppercase;
-    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+    text-shadow: -2px -2px 0 white;
     margin: 0;
+    display: block;
+}
+
+.hero h1 span{
+    display:block;
 }
 
 .hero p{
-    font-family:'Porter Sans', sans-serif;
-    font-size: 1.5rem;
-    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: Bold;
     color: #45016d;
     text-transform: uppercase;
-    /*I'd desperately trying to make it so that this text doesn't inherit the shadow from the heading, but nothings working :( */
-    text-shadow: none !important;
-    filter: none !important;
-    box-shadow: none !important;
     margin: 10px 0;
 }
