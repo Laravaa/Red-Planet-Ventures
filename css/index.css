@@ -277,7 +277,6 @@ body, html{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color:#55daeb;
-    text-transform: uppercase;
 }
 
 .upcoming-trips h2{
@@ -305,19 +304,22 @@ body, html{
 
 .trip-card img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .trip-card h3{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     border-radius: 15px;
+    color: white;
 }
 
 .trip-card p{
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color:grey;
+    font-size: 12px;
+    color:white;
 }
 
 .trip-card:hover{
