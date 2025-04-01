@@ -265,3 +265,78 @@ body, html{
     width:500px;
     border-radius:15px;
 }
+
+.upcoming-trips{
+    background-color:#45016d;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.upcoming-trips h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color:#55daeb;
+    text-transform: uppercase;
+}
+
+.upcoming-trips h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.trips-container{
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.trip-card{
+    background-color:#45016d;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align:center;
+    transition: transform 0.3s;
+}
+
+.trip-card img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.trip-card h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.trip-card p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color:grey;
+}
+
+.trip-card:hover{
+    transform: scale(1.05);
+}
+
+.book-trip{
+    font-family:'Poppins', sans-serif;
+    background-color:#e51728;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.book-trip:hover{
+    background-color:#c41424;
+}
