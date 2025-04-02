@@ -95,6 +95,35 @@ html {
     color: black;
 }
 
+.header {
+    height: 50vh;
+    background-image: url("../assets/images/headerbackBack.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    text-shadow: none !important;
+    position: relative;
+  }
+
+  .header h1 {
+    font-family: "Porter Sans", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+  }
+  
+  .header h1 span {
+    display: block;
+  }
+
 footer {
     background-color: white;
     padding: 40px 20px;
