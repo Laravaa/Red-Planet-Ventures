@@ -163,6 +163,136 @@ html {
     font-family: 'Poppins', sans-serif;
   }
 
+  .flights{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+
+  .flights-container{
+    display: flex;
+    max-width:1200px;
+    background: white;
+    padding: 40px;
+    align-items: center;
+    gap: 40px;
+    gap: 60px;
+  }
+
+  .flights-image img{
+    width: 400px;
+    border-radius: 10px;
+  }
+
+  .flights-details{
+    max-width: 600px;
+  }
+
+  .flights-details h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight:bold;
+  }
+
+  .price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color:grey;
+    font-weight: bold;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .old-price{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: line-through;
+    color: grey;
+    font-size: 18px;
+  }
+
+  .rating{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: grey;
+    margin: 10px 0;
+  }
+
+  .description{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: grey;
+    margin-bottom: 20px;
+  }
+
+  .flights-options{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .flights-options input{
+    background-color: #45016d;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 50px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+.quantity-container{
+    display:flex;
+    align-items: center;
+    background-color: #45016d;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quantity-container .quantity-btn, .quantity-container input{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+.quantity-container input{
+    width: 50px;
+    background-color: #45016d;
+}
+
+.quantity-btn{
+    cursor: pointer;
+}
+
+.book-now{
+    font-family: 'Poppins', sans-serif;
+    background:#e51728;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius:5px;
+  }
+
+  .flight-info {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .flights-info li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: grey;
+    margin: 5px 0;
+  }
+
   footer {
     background-color: white;
     padding: 40px 20px;
