@@ -154,6 +154,7 @@ html {
     font-size: 18px;
   }
 
+  /*fighting the urge to spell color with a u*/
   .filter-controls input, .filter-controls select{
     background-color: white;
     color: black;
@@ -169,6 +170,7 @@ html {
     padding: 50px 20px;
   }
 
+  /* Ive set up each individual flight product in a way where they have their own sections (mars, neptune etc...) but because the styling for every second flights section is the same, Iv'e created styling for flights and flights2 to sum it up. This way I wont need to code 10 bajillion lines of css. ╰(*°▽°*)╯ */
 
   .flights-container{
     display: flex;
@@ -271,13 +273,17 @@ html {
 
 .book-now{
     font-family: 'Poppins', sans-serif;
-    background:#e51728;
+    background-color:#e51728;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
     border-radius:5px;
+  }
+
+  .book-now:hover{
+    background-color:#c41424;
   }
 
 
@@ -377,6 +383,7 @@ html {
     border-radius: 5px;
   }
 
+  /*These quantity buttons are my biggest op right now. For some reason the plus and minus buttons aren't functioning, but the input has arrows to bring the button up and down. I know these don't need to be functional, but now I don't even have the option of being extra*/
 .quantity-container2{
     display:flex;
     align-items: center;
@@ -405,13 +412,17 @@ html {
 
 .book-now2{
     font-family: 'Poppins', sans-serif;
-    background:#e51728;
+    background-color:#e51728;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
     border-radius:5px;
+  }
+
+  .book-now2:hover{
+    background-color: #c41424;
   }
 
   .flight-info2 {

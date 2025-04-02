@@ -6,6 +6,7 @@
   font-size: normal;
 }
 
+/*I'm embarrassed to admit how long it took me to figure out importing google fonts, to this day I don't think I imported everything I should've*/
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
@@ -25,6 +26,7 @@ html {
   height: 100%;
 }
 
+/* For some reason my nav bar is displaying as kind of a frosted white rather than properly transparent white? I'm not sure what I'm missing there but I'll fix that when I'm done with the website and making finishing touches*/
 .navbar {
   position: fixed;
   top: 10px;
@@ -107,7 +109,6 @@ html {
   justify-content: flex-end;
   text-align: left;
   padding: 50px;
-  text-shadow: none !important;
 }
 
 .hero h1 {
@@ -194,10 +195,12 @@ html {
   transition: 0.3s;
 }
 
+/*I know this wasn't necessary but I thought it would be a funky little touch to add. I don't know if I'll consistently do this do every button. I'll probably do it though. It's cute*/
 .book-now:hover {
   background-color: #c41424;
 }
 
+/*My arrows aren't in their correct spaces as of now but I will fix that with my finishing touches. These arrows are really the bane of my existence right now*/
 .arrow {
   cursor: pointer;
   position: absolute;
@@ -323,6 +326,7 @@ html {
   color: white;
 }
 
+/*How fun is this?? So fun right?? Not sure if I'll ever do it again. You can tell I was still blissfully unaware of the approaching deadline when I coded this in*/
 .trip-card:hover {
   transform: scale(1.05);
 }
@@ -344,6 +348,7 @@ html {
   background-color: #c41424;
 }
 
+/*Something in my footer is making the center container and the right container misaligned, I'm too scared to touch anything in my stylesheet though in case something breaks.I know there are quite a few redundant lines of code in my css, and I'm going to attribute those to pure stress induced code session. Call it functional chaos but I'll try to be more organized going forward*/ 
 footer {
   background-color: white;
   padding: 40px 20px;
@@ -447,3 +452,7 @@ footer {
 .footer-links a:hover {
   color: black;
 }
+
+/*Notes*/
+/*There are quite a few techniques and functions that I used throughout my code that I learned during a 6 month web development bootcamp that I did with Hyperiondev last year. I went back on a few of the pdf's I was given with that bootcamp as a refresher on solutions to problems that I couldn't think of any other way to solve them */
+/*I mention this because of the techniques I used that haven't been discussed in class before. I'm not sure if I'm allowed to be doing what I'm doing, not that it's even all that advanced, just that it's not something wev'e done as a class in DV100 */

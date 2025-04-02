@@ -96,7 +96,7 @@ html {
 }
 
 .header {
-    height: 50vh;
+    height: 40vh;
     background-image: url("../assets/images/headerbackBack.png");
     background-size: cover;
     background-position: center;
