@@ -1,25 +1,18 @@
 <!DOCTYPE html> <!-- Document type-->
 <html lang="en"> <!-- html declaration-->
 
+<head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE-edge">
-<meta name="viewport" content="width-device-width, initial-scale-1.0">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
 
 <meta name="author" content="Lara van Jaarsveld 251111">
-<meta name="keywords" content="Red Planet Ventures">
-<meta name="keywords" content="Flights Page">
-<meta name="keywords" content="Mars">
-<meta name="keywords" content="Neptune">
-<meta name="keywords" content="Jupiter">
-<meta name="keywords" content="Saturn">
-<meta name="keywords" content="Uranus">
-<meta name="keywords" content="Moon">
+<meta name="keywords" content="Red Planet Ventures,Flights Page,Mars,Neptune,Jupiter,Saturn,Uranus,Moon">
 <meta name="description"
     content="Red planet ventures, a website providing trips around the solar system. The flights page goes into depth on the different trips available with red planet ventures, such as trips to mars, neptune, jupiter, uranus, the moon and saturn.">
 <title>Flights Page</title>
 
 <link rel="stylesheet" href="css/flights.css">
-
 
 </head>
 
@@ -45,6 +38,30 @@
     <!--Page Header-->
     <section class="header">
         <h1>Book a flight</h1>
+        <div class="filter-bar">
+            <div class="filter-options">
+                <span class="filter-icon">🔼</1>Filter</span>
+                <span class="grid-icon">⬜</2></span>
+                <span class="list-icon">📃</3></span>
+                <span class="results-count">Showing 1-16 of 32 results</span>
+            </div>
+            <div class="filter-controls">
+                <label for="show">Show</label>
+                <input type="number" id="show" value="6" min="1" max="32">
+                <label for="sort">Short by</label>
+                <select id="sort">
+                    <option>Default</option>
+                    <option>Price</option>
+                    <option>Duration</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!---The Classic Mars experience-->
+    <section class="Mars">
+        <h3>The Classic Mars Experience</h3>
+        
     </section>
 
     <!--The footer-->
@@ -78,7 +95,7 @@
         </div>
         <div class="footer-bottom">
             <p>All Rights Reserved @ Open Window 2024</p>
-            <div class="footer-links>">
+            <div class="footer-links">
                 <a href="#">Terms & Conditions</a>
                 <a href="#">Privacy & Policy</a>
             </div>

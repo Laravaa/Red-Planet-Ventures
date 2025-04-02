@@ -108,6 +108,7 @@ html {
     text-align: center;
     padding: 50px;
     text-shadow: none !important;
+    position: relative;
   }
 
   .header h1 {
@@ -122,6 +123,44 @@ html {
   
   .header h1 span {
     display: block;
+  }
+
+  .filter-bar{
+    background-color: #45016d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+
+  .filter-options{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .filter-controls label{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+  }
+
+  .filter-controls input, .filter-controls select{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
   }
 
   footer {

@@ -199,24 +199,24 @@ html {
 }
 
 .arrow {
-  font-size: 48px;
-  font-weight: bold;
-  color: white;
   cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   padding: 10px 25px;
   border-radius: 50%;
   user-select: none;
 }
 
-.arrow.left {
+.arrow.left img{
   left: -2%;
+  height: 50px;
+  width: auto;
 }
 
-.arrow.right {
+.arrow.right img{
   right: -2%;
+  height: 50px;
+  width: auto;
 }
 
 .shuttles {
