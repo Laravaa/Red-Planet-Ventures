@@ -124,6 +124,53 @@ html {
     display: block;
   }
 
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #45016d;
+    height: 90vh;
+    padding: 50px;
+    gap: 50px;
+    position: relative;
+  }
+  
+  .about-image {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .about-image img {
+    width: 500px;
+    border-radius: 15px;
+  }
+  
+  .about-text {
+    max-width: 500px;
+    color: white;
+  }
+  
+  .about-text h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #55daeb;
+    font-weight: medium;
+    text-transform: uppercase;
+  }
+  
+  .about-text h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .about-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
 footer {
     background-color: white;
     padding: 40px 20px;
