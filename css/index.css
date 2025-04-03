@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Porter sans";
-  src: url("../assets/fonts/porter_sans_block/porter-sans-inline-block.otf")
-    format("opentype");
+  src: url("../assets/fonts/porter_sans_block/porter-sans-inline-block.otf") format("opentype");
   font-weight: normal;
   font-size: normal;
 }
@@ -220,7 +219,7 @@ html {
   right: 10px;
 }
 
-.arrow img{
+.arrow img {
   height: 50px;
   width: auto;
 }
@@ -351,7 +350,7 @@ html {
   background-color: #c41424;
 }
 
-/*Something in my footer is making the center container and the right container misaligned, I'm too scared to touch anything in my stylesheet though in case something breaks.I know there are quite a few redundant lines of code in my css, and I'm going to attribute those to pure stress induced code session. Call it functional chaos but I'll try to be more organized going forward*/ 
+/*Something in my footer is making the center container and the right container misaligned, I'm too scared to touch anything in my stylesheet though in case something breaks.I know there are quite a few redundant lines of code in my css, and I'm going to attribute those to pure stress induced code session. Call it functional chaos but I'll try to be more organized going forward*/
 footer {
   background-color: white;
   padding: 40px 20px;

@@ -109,9 +109,9 @@ html {
     padding: 50px;
     text-shadow: none !important;
     position: relative;
-  }
+}
 
-  .header h1 {
+.header h1 {
     font-family: "Porter Sans", sans-serif;
     font-size: 48px;
     font-weight: bold;
@@ -119,134 +119,135 @@ html {
     text-transform: uppercase;
     margin: 0;
     display: block;
-  }
-  
-  .header h1 span {
-    display: block;
-  }
+}
 
-  .filter-bar{
+.header h1 span {
+    display: block;
+}
+
+.filter-bar {
     background-color: #45016d;
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     padding: 30px 60px;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    right:0;
+    right: 0;
     font-size: 18px;
     box-sizing: border-box;
-  }
+}
 
-  .filter-options{
+.filter-options {
     display: flex;
     align-items: center;
     gap: 15px;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
-  .filter-controls label{
+.filter-controls label {
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-  }
+}
 
-  /*fighting the urge to spell color with a u*/
-  .filter-controls input, .filter-controls select{
+/*fighting the urge to spell color with a u*/
+.filter-controls input,
+.filter-controls select {
     background-color: white;
     color: black;
     border: none;
     padding: 5px;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
-  .mars{
+.mars {
     display: flex;
     justify-content: center;
     padding: 50px 20px;
-  }
+}
 
-  .jupiter{
+.jupiter {
     display: flex;
     justify-content: center;
     padding: 50px 20px;
-  }
+}
 
-  .uranus{
+.uranus {
     display: flex;
     justify-content: center;
     padding: 50px 20px;
-  }
+}
 
-  /* Ive set up each individual flight product in a way where they have their own sections (mars, neptune etc...) but because the styling for every second flights section is the same, Iv'e created styling for flights and flights2 to sum it up. This way I wont need to code 10 bajillion lines of css. ╰(*°▽°*)╯ */
+/* Ive set up each individual flight product in a way where they have their own sections (mars, neptune etc...) but because the styling for every second flights section is the same, Iv'e created styling for flights and flights2 to sum it up. This way I wont need to code 10 bajillion lines of css. ╰(*°▽°*)╯ */
 
-  .flights-container{
+.flights-container {
     display: flex;
-    max-width:1200px;
+    max-width: 1200px;
     background: white;
     padding: 40px;
     align-items: center;
     gap: 40px;
     gap: 60px;
-  }
+}
 
-  .flights-image img{
+.flights-image img {
     width: 400px;
     border-radius: 10px;
-  }
+}
 
-  .flights-details{
+.flights-details {
     max-width: 600px;
-  }
+}
 
-  .flights-details h2{
+.flights-details h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
-    font-weight:bold;
-  }
+    font-weight: bold;
+}
 
-  .price{
+.price {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color:grey;
+    color: grey;
     font-weight: bold;
     display: flex;
     gap: 15px;
     align-items: center;
-  }
+}
 
-  .old-price{
+.old-price {
     font-family: 'Poppins', sans-serif;
     text-decoration: line-through;
     color: grey;
     font-size: 18px;
-  }
+}
 
-  .rating{
+.rating {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: grey;
     margin: 10px 0;
-  }
+}
 
-  .description{
+.description {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: grey;
     margin-bottom: 20px;
-  }
+}
 
-  .flights-options{
+.flights-options {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
+}
 
-  .flights-options input{
+.flights-options input {
     background-color: #45016d;
     color: white;
     border: none;
@@ -255,17 +256,18 @@ html {
     padding: 10px;
     font-size: 18px;
     border-radius: 5px;
-  }
+}
 
-.quantity-container{
-    display:flex;
+.quantity-container {
+    display: flex;
     align-items: center;
     background-color: #45016d;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.quantity-container .quantity-btn, .quantity-container input{
+.quantity-container .quantity-btn,
+.quantity-container input {
     border: none;
     background: none;
     color: white;
@@ -274,131 +276,132 @@ html {
     text-align: center;
 }
 
-.quantity-container input{
+.quantity-container input {
     width: 50px;
     background-color: #45016d;
 }
 
-.quantity-btn{
+.quantity-btn {
     cursor: pointer;
 }
 
-.book-now{
+.book-now {
     font-family: 'Poppins', sans-serif;
-    background-color:#e51728;
+    background-color: #e51728;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
-    border-radius:5px;
-  }
+    border-radius: 5px;
+}
 
-  .book-now:hover{
-    background-color:#c41424;
-  }
+.book-now:hover {
+    background-color: #c41424;
+}
 
 
-  .flight-info {
+.flight-info {
     font-family: 'Poppins', sans-serif;
     list-style: none;
     padding: 0;
     margin-top: 20px;
-  }
+}
 
-  .flights-info li{
+.flights-info li {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: grey;
     margin: 5px 0;
-  }
+}
 
-  .neptune{
+.neptune {
     display: flex;
     justify-content: center;
     padding: 50px 20px;
-    background:#45016d;
-  }
+    background: #45016d;
+}
 
-  .saturn{
+.saturn {
     display: flex;
     justify-content: center;
     padding: 50px 20px;
-    background:#45016d;
-  }
+    background: #45016d;
+}
 
-  .moon{
+.moon {
     display: flex;
     justify-content: center;
     padding: 50px 20px;
-    background:#45016d;
-  }
+    background: #45016d;
+}
 
-  .flights-container2{
+.flights-container2 {
     display: flex;
-    max-width:1200px;
+    max-width: 1200px;
     background: #45016d;
     padding: 40px;
     align-items: center;
     gap: 40px;
     gap: 60px;
-  }
+}
 
-  .flights-image2 img{
+.flights-image2 img {
     width: 400px;
     border-radius: 10px;
-  }
+}
 
-  .flights-details2{
+.flights-details2 {
     max-width: 600px;
-  }
+}
 
-  .flights-details2 h2{
+.flights-details2 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
-    font-weight:bold;
+    font-weight: bold;
     color: white;
-  }
+}
 
-  .price2{
+.price2 {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color:grey;
+    color: grey;
     font-weight: bold;
     display: flex;
     gap: 15px;
     align-items: center;
     color: #55daeb;
-  }
+}
 
-  .old-price2{
+.old-price2 {
     font-family: 'Poppins', sans-serif;
     text-decoration: line-through;
     color: grey;
     font-size: 18px;
-  }
+}
 
-  .rating2{
+.rating2 {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: grey;
     margin: 10px 0;
-  }
+}
 
-  .description2{
+.description2 {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color: white;;
+    color: white;
+    ;
     margin-bottom: 20px;
-  }
+}
 
-  .flights-options2{
+.flights-options2 {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
+}
 
-  .flights-options2 input{
+.flights-options2 input {
     background-color: #55daeb;
     color: white;
     border: none;
@@ -407,18 +410,19 @@ html {
     padding: 10px;
     font-size: 18px;
     border-radius: 5px;
-  }
+}
 
-  /*These quantity buttons are my biggest op right now. For some reason the plus and minus buttons aren't functioning, but the input has arrows to bring the button up and down. I know these don't need to be functional, but now I don't even have the option of being extra*/
-.quantity-container2{
-    display:flex;
+/*These quantity buttons are my biggest op right now. For some reason the plus and minus buttons aren't functioning, but the input has arrows to bring the button up and down. I know these don't need to be functional, but now I don't even have the option of being extra*/
+.quantity-container2 {
+    display: flex;
     align-items: center;
     background-color: #55daeb;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.quantity-container2 .quantity-btn2, .quantity-container2 input{
+.quantity-container2 .quantity-btn2,
+.quantity-container2 input {
     border: none;
     background: none;
     color: white;
@@ -427,116 +431,116 @@ html {
     text-align: center;
 }
 
-.quantity-container2 input{
+.quantity-container2 input {
     width: 50px;
     background-color: #55daeb;
 }
 
-.quantity-btn2{
+.quantity-btn2 {
     cursor: pointer;
 }
 
-.book-now2{
+.book-now2 {
     font-family: 'Poppins', sans-serif;
-    background-color:#e51728;
+    background-color: #e51728;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
-    border-radius:5px;
-  }
+    border-radius: 5px;
+}
 
-  .book-now2:hover{
+.book-now2:hover {
     background-color: #c41424;
-  }
+}
 
-  .flight-info2 {
+.flight-info2 {
     font-family: 'Poppins', sans-serif;
     list-style: none;
     padding: 0;
     margin-top: 20px;
-  }
+}
 
-  .flights-info2 li{
+.flights-info2 li {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: grey;
     margin: 5px 0;
-  }
+}
 
-  footer {
+footer {
     background-color: white;
     padding: 40px 20px;
     text-align: center;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
-  }
-  
-  .footer-left {
+}
+
+.footer-left {
     max-width: 300px;
     text-align: left;
-  }
-  
-  .footer-left img {
+}
+
+.footer-left img {
     width: 150px;
     margin-bottom: 10px;
-  }
-  
-  .footer-left p {
+}
+
+.footer-left p {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     color: grey;
-  }
-  
-  .footer-center h4,
-  .footer-right h4 {
+}
+
+.footer-center h4,
+.footer-right h4 {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: black;
     margin-bottom: 10px;
-  }
-  
-  .footer-center ul {
+}
+
+.footer-center ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .footer-center ul li {
+}
+
+.footer-center ul li {
     margin: 5px 0;
-  }
-  
-  .footer-center ul li a {
+}
+
+.footer-center ul li a {
     text-decoration: none;
     color: grey;
     font-size: 14px;
     font-family: "Poppins", sans-serif;
-  }
-  
-  .footer-center ul li a:hover {
+}
+
+.footer-center ul li a:hover {
     color: black;
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     display: flex;
     gap: 15px;
-  }
-  
-  .social-icons a img {
+}
+
+.social-icons a img {
     width: 40px;
     height: 40px;
     border-radius: 10px;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     margin-top: 20px;
     border-top: 1px solid white;
     padding-top: 10px;
@@ -545,26 +549,26 @@ html {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .footer-bottom p {
+}
+
+.footer-bottom p {
     font-family: "Poppins", sans-serif;
     font-size: 12px;
     color: grey;
-  }
-  
-  .footer-links {
+}
+
+.footer-links {
     display: flex;
     gap: 15px;
-  }
-  
-  .footer-links a {
+}
+
+.footer-links a {
     text-decoration: none;
     font-size: 12px;
     color: grey;
     font-family: "Poppins", sans-serif;
-  }
-  
-  .footer-links a:hover {
+}
+
+.footer-links a:hover {
     color: black;
-  }
+}
