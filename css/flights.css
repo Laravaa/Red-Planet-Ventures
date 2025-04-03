@@ -170,6 +170,18 @@ html {
     padding: 50px 20px;
   }
 
+  .jupiter{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+
+  .uranus{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+
   /* Ive set up each individual flight product in a way where they have their own sections (mars, neptune etc...) but because the styling for every second flights section is the same, Iv'e created styling for flights and flights2 to sum it up. This way I wont need to code 10 bajillion lines of css. ╰(*°▽°*)╯ */
 
   .flights-container{
@@ -302,6 +314,20 @@ html {
   }
 
   .neptune{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background:#45016d;
+  }
+
+  .saturn{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background:#45016d;
+  }
+
+  .moon{
     display: flex;
     justify-content: center;
     padding: 50px 20px;

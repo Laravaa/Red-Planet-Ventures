@@ -202,7 +202,6 @@ html {
   background-color: #c41424;
 }
 
-/*My arrows aren't in their correct spaces as of now but I will fix that with my finishing touches. These arrows are really the bane of my existence right now*/
 .arrow {
   cursor: pointer;
   position: absolute;
