@@ -1,3 +1,5 @@
+/*As stipulated in the assignment brief: The overall layout, placement of UI elements and content for the website was adhered to in relation to the example images provided. */
+
 @font-face {
   font-family: "Porter sans";
   src: url("../assets/fonts/porter_sans_block/porter-sans-inline-block.otf") format("opentype");
@@ -97,6 +99,7 @@ html {
   color: black;
 }
 
+/*--As stipulated in the assignment brief: The Home page consists of a header section with a background image (coded into the css file)*/
 .hero {
   height: 90vh;
   background-image: url("../assets/images/homePageHeader.png");
@@ -146,6 +149,7 @@ html {
   position: relative;
 }
 
+/*As stipulated in the assignment brief: Below the header image there is a non-functional slider of a featured trip with an image of the planet on the left, and a short description on the right.*/
 .featured-image {
   position: relative;
   display: inline-block;
@@ -224,6 +228,7 @@ html {
   width: auto;
 }
 
+/*As stipulated in the assignment brief: The Home page contains a list of the different space crafts and a sneak peak into four upcoming flights*/
 .shuttles {
   display: flex;
   flex-direction: row;

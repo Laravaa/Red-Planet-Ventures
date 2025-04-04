@@ -266,6 +266,7 @@ html {
     overflow: hidden;
 }
 
+/*As stipulated in the assignment brief: There is a non-functional plus/minus counter next to each ticket option to change the amount of tickets to buy*/
 .quantity-container .quantity-btn,
 .quantity-container input {
     border: none;
