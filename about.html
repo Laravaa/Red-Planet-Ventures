@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Document type-->
+<html lang="en"> <!-- html declaration-->
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--As stipulated in the assignment brief: Each html file contains metadata information concerning the website. This includes the site title, keywords, website descriptions and my name and student number (author details.)-->
+<meta name="author" content="Lara van Jaarsveld 251111">
+<meta name="keywords" content="Red Planet Ventures,About Page, history, goals">
+<meta name="description"
+    content="Red planet ventures, a website providing trips around the solar system. The about page details Red planet Venture's goals and history, going into more depth on the company.">
+<title>Red Planet Ventures</title>
+
+<link rel="stylesheet" href="css/about.css">
+
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <!--As stipulated in the assignment brief: Each page has a navigation bar located at the top of the screen, oriented horizontally. It is functional and able to navigate to all pages.-->
+    <nav class="navbar">
+        <!--As stipulated in the assignment brief: The navbar contains the logo on the left, which also links to the homepage. It's followed by the navigational links for the site-->
+        <div class="logo">
+            <a href="index.html"><img src="../assets/images/logo.png" alt="Logo" /></a>
+        </div>
+        <ul>
+            <!--Iv'e set up the nav bar to take note of the active page, and keep that link highlighted-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="flights.html">Flights</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!--As stipulated in the assignment brief: To the right of the nav bar there is a non-functional search bar-->
+        <div class="search-container">
+            <!--I placed a magnifying glass emoji into the text placeholder as a placeholder until I can figure out that icon, I think I should use font awesome maybe, but I don't know how it works-->
+            <input type="text" placeholder="🔍 Search..." />
+        </div>
+    </nav>
+
+</body>
+
+</html>

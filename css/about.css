@@ -1,0 +1,100 @@
+/*As stipulated in the assignment brief: The overall layout, placement of UI elements and content for the website was adhered to in relation to the example images */
+
+@font-face {
+    font-family: "Porter sans";
+    src: url("../assets/fonts/porter_sans_block/porter-sans-inline-block.otf") format("opentype");
+    font-weight: normal;
+    font-size: normal;
+  }
+  
+  /*I'm embarrassed to admit how long it took me to figure out importing google fonts, to this day I don't think I imported everything I should've*/
+  @font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* For some reason my nav bar is displaying as kind of a frosted white rather than properly transparent white? I'm not sure what I'm missing there but I'll fix that when I'm done with the website and making finishing touches*/
+  .navbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: #ffffffa9;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    height: 40px;
+    padding-left: 30px;
+  }
+  
+  .navbar ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: medium;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a.active,
+  .navbar ul li a:hover {
+    color: #e51728;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+  }
+  
+  .search-container input {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: light;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    color: black;
+    background-color: white;
+  }
+  
+  .search-container input::placeholder {
+    color: black;
+  }
