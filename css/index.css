@@ -80,6 +80,7 @@ html {
   display: flex;
   align-items: center;
   padding-right: 30px;
+
 }
 
 .search-container select{
@@ -143,16 +144,11 @@ html {
 }
 
 /*As stipulated in the assignment brief: Below the header image there is a non-functional slider of a featured trip with an image of the planet on the left, and a short description on the right.*/
-.featured-image {
-  position: relative;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-}
-
-.featured-image img {
-  width: 500px;
-  border-radius: 15px;
+.carousel-inner img{
+  border-radius: 10px;
+  max-height: 500px;
+  width: 200px;
+  object-fit: cover;
 }
 
 .featured-text {
@@ -198,28 +194,6 @@ html {
   background-color: #c41424;
 }
 
-.arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px 25px;
-  border-radius: 50%;
-  user-select: none;
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
-
-.arrow img {
-  height: 50px;
-  width: auto;
-}
 
 /*As stipulated in the assignment brief: The Home page contains a list of the different space crafts and a sneak peak into four upcoming flights*/
 .shuttles {
