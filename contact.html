@@ -11,12 +11,18 @@
     content="Red planet ventures, a website providing trips around the solar system. The contact us page consists of a brief About section, links to Red planet ventures social media pages, a functioning map to their physical location, and a section to message them">
 <title>Red Planet Ventures</title>
 
+<!--Bootstrap css-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="css/contact.css">
 
 
 </head>
 
 <body>
+
+    <!--Bootstrap JS Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Navigation Bar-->
     <nav class="navbar">
@@ -30,10 +36,14 @@
             <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
 
-        <div class="search-container">
-            <!--I placed a magnifying glass emoji into the text placeholder as a placeholder until I can figure out that icon-->
-            <input type="text" placeholder="🔍 Search..." />
-        </div>
+        <!--Ive updated the code for the search bar, making it into a dropdown that will link to certain parts of the webpage. I did this using bootstrap in light of phase 2's assignment-->
+        <form class="d-flex search-container" role="search" action="#">
+            <select class="form-select" onchange="location.href=this.value;">
+                <option selected disabled>🔍 Search...</option>
+                <option value="#about-us">About Us</option>
+                <option value="#contact-info">Contact Us</option>
+            </select>
+        </form>
     </nav>
 
     <!--Header-->
@@ -44,7 +54,7 @@
     <!--About section-->
     <!--I copy pasted my code from the featured section of index.html, because the basic structure of these sections are very similar. I figured I'd save myself some time. -->
     <!--A LOT of my code, specifically my css was copied and pasted from index.html, and index.css, with the primary details changed, just to make life easier.-->
-    <section class="about">
+    <section class="about" id="about-us">
 
         <!--As stipulated in the assignment brief: The contact us page contains a paragraph that describes and outlines the website-->
         <div class="about-text">
@@ -68,7 +78,7 @@
 
     <!--The contact info section-->
     <!--As stipulated in the assignment brief: Below the about paragraph there is contact method links-->
-    <section class="contacts-section">
+    <section class="contacts-section" id="contact-info">
         <div class="contacts-info">
             <h4>Contact us through our</h4>
             <h2>Social Media Pages</h2>

@@ -82,26 +82,19 @@ html {
   padding-right: 30px;
 }
 
-.search-container input {
+.search-container select{
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
-  font-weight: light;
-  padding: 8px;
   font-size: 14px;
   border-radius: 10px;
-  border: 1px solid #ccc;
-  outline: none;
-  color: black;
+  border: 1px solid white;
+  padding: 8px;
   background-color: white;
-}
-
-.search-container input::placeholder {
   color: black;
 }
 
 /*--As stipulated in the assignment brief: The Home page consists of a header section with a background image (coded into the css file)*/
 .hero {
-  height: 90vh;
+  height: 100vh;
   background-image: url("../assets/images/homePageHeader.png");
   background-size: cover;
   background-position: center;
@@ -143,7 +136,7 @@ html {
   align-items: center;
   justify-content: center;
   background-color: #45016d;
-  height: 90vh;
+  height: 100vh;
   padding: 50px;
   gap: 50px;
   position: relative;
@@ -235,7 +228,7 @@ html {
   align-items: center;
   justify-content: center;
   background-color: white;
-  height: 90vh;
+  height: 100vh;
   padding: 50px;
   gap: 100px;
 }
@@ -279,6 +272,7 @@ html {
 
 .upcoming-trips {
   background-color: #45016d;
+  height: 100vh;
   text-align: center;
   padding: 80px 20px;
   color: white;
