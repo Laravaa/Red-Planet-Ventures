@@ -25,30 +25,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Navigation Bar-->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="../assets/images/logo.png" alt="Logo" /></a>
+    <!--As stipulated in the assignment brief: Each page has a navigation bar located at the top of the screen, oriented horizontally. It is functional and able to navigate to all pages.-->
+    <nav class="navbar navbar-expand-md">
+        <!--As stipulated in the assignment brief: The navbar contains the logo on the left, which also links to the homepage. It's followed by the navigational links for the site-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../assets/images/logo.png" alt="Logo" height="40">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <!--Iv'e set up the nav bar to take note of the active page, and keep that link highlighted-->
+                    <li class="nav-item"><a class="nav-link" href="index.html" class="active">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="flights.html">Flights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+    
+                <!--As stipulated in the assignment brief: To the right of the nav bar there is a non-functional search bar-->
+                <!--Ive updated the code for the search bar, making it into a dropdown that will link to certain parts of the webpage. I did this using bootstrap in light of phase 2's assignment-->
+                <form class="d-flex search-container">
+                    <select class="form-select" onchange="location.href=this.value;">
+                        <option selected disabled>🔍 Search...</option>
+                        <option value="#mars">The Classic Mars Experience</option>
+                        <option value="#neptune">Neptune's Cosmic Dive</option>
+                        <option value="#jupiter">The Giants Journey</option>
+                        <option value="#saturn">Ring Around a Saturn</option>
+                        <option value="#uranus">Uranus Uncharted</option>
+                        <option value="#moon">Moonlight Meander</option>
+                    </select>
+                </form>
+    
+            </div>
         </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="flights.html" class="active">Flights</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-         <!--Ive updated the code for the search bar, making it into a dropdown that will link to certain parts of the webpage. I did this using bootstrap in light of phase 2's assignment-->
-         <form class="d-flex search-container" role="search" action="#">
-            <select class="form-select" onchange="location.href=this.value;">
-                <option selected disabled>🔍 Search...</option>
-                <option value="#mars">The Classic Mars Experience</option>
-                <option value="#neptune">Neptune's Cosmic Dive</option>
-                <option value="#jupiter">The Giants Journey</option>
-                <option value="#saturn">Ring Around a Saturn</option>
-                <option value="#uranus">Uranus Uncharted</option>
-                <option value="#moon">Moonlight Meander</option>
-            </select>
-        </form>
-    </nav>
+        </nav>
 
     <!--Page Header-->
     <section class="header">

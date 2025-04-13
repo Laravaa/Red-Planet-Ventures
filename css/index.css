@@ -73,7 +73,7 @@ html {
 
 .navbar ul li a.active,
 .navbar ul li a:hover {
-  color: #e51728;
+  color: #e51728 !important;
 }
 
 .search-container {
@@ -132,22 +132,13 @@ html {
 }
 
 .featured {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   background-color: #45016d;
-  height: 100vh;
-  padding: 50px;
-  gap: 50px;
-  position: relative;
 }
 
 /*As stipulated in the assignment brief: Below the header image there is a non-functional slider of a featured trip with an image of the planet on the left, and a short description on the right.*/
 .carousel-inner img{
   border-radius: 10px;
   max-height: 500px;
-  width: 200px;
   object-fit: cover;
 }
 
@@ -176,7 +167,14 @@ html {
   font-weight: normal;
 }
 
-.book-now {
+@media (max-width: 767px) {
+  .featured-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.custom-book-now {
   font-family: "Poppins", sans-serif;
   background-color: #e51728;
   color: white;
@@ -186,14 +184,15 @@ html {
   cursor: pointer;
   border-radius: 10px;
   margin-top: 20px;
-  transition: 0.3s;
+  transition: 0.3s ;
+  width: auto ;
+  display: inline-block ;
 }
 
 /*I know this wasn't necessary but I thought it would be a funky little touch to add. I don't know if I'll consistently do this do every button. I'll probably do it though. It's cute*/
-.book-now:hover {
+.custom-book-now:hover {
   background-color: #c41424;
 }
-
 
 /*As stipulated in the assignment brief: The Home page contains a list of the different space crafts and a sneak peak into four upcoming flights*/
 .shuttles {
@@ -205,6 +204,36 @@ html {
   height: 100vh;
   padding: 50px;
   gap: 100px;
+}
+
+@media(max-width: 768px){
+  .shuttles{
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 40px;
+    height: auto;
+    text-align: center;
+  }
+
+  .shuttles-text {
+    font-family: "Poppins", sans-serif;
+    max-width: 100%;
+    color: white;
+  }
+
+  .shuttles-text h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #45016d;
+  }
+
+  .shuttles-image img {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 350px;
+    height: auto;
+  }
 }
 
 .shuttles-text {
@@ -246,6 +275,7 @@ html {
 
 .upcoming-trips {
   background-color: #45016d;
+  min-height: 100vh;
   height: 100vh;
   text-align: center;
   padding: 80px 20px;
@@ -265,11 +295,19 @@ html {
   margin-bottom: 40px;
 }
 
-.trips-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+@media(max-width: 768px){
+  .upcoming-trips{
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .upcoming-trips h2{
+    font-size: 32px;
+  }
+
+  .trip-card p{
+    font-size: 14px;
+  }
 }
 
 .trip-card {
@@ -316,6 +354,7 @@ html {
   cursor: pointer;
   border-radius: 10px;
   margin-top: 30px;
+  margin-bottom: 30px;
   transition: 0.3s;
 }
 
