@@ -372,10 +372,17 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media(max-width: 768px) {
+  .social-icons{
+    justify-content: center;
+  }
 }
 
 .footer-left {
