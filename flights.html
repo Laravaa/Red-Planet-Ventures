@@ -12,9 +12,9 @@
         content="Red planet ventures, a website providing trips around the solar system. The flights page goes into depth on the different trips available with red planet ventures, such as trips to mars, neptune, jupiter, uranus, the moon and saturn.">
     <title>Red Planet Ventures</title>
 
-        <!--Bootstrap css-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/flights.css">
 
@@ -33,11 +33,11 @@
             <a class="navbar-brand" href="index.html">
                 <img src="../assets/images/logo.png" alt="Logo" height="40">
             </a>
-    
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navContent">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <!--Iv'e set up the nav bar to take note of the active page, and keep that link highlighted-->
@@ -46,7 +46,7 @@
                     <li class="nav-item"><a class="nav-link active" href="flights.html">Flights</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-    
+
                 <!--As stipulated in the assignment brief: To the right of the nav bar there is a non-functional search bar-->
                 <!--Ive updated the code for the search bar, making it into a dropdown that will link to certain parts of the webpage. I did this using bootstrap in light of phase 2's assignment-->
                 <form class="d-flex search-container">
@@ -60,10 +60,10 @@
                         <option value="#moon">Moonlight Meander</option>
                     </select>
                 </form>
-    
+
             </div>
         </div>
-        </nav>
+    </nav>
 
     <!--Page Header-->
     <section class="header">
@@ -81,7 +81,8 @@
                     </div>
 
                     <!--Filter Controls-->
-                    <div class="col-12 col-md-6 d-flex flex-wrap justify-content-md-end align-items-center gap-2 filter-controls">
+                    <div
+                        class="col-12 col-md-6 d-flex flex-wrap justify-content-md-end align-items-center gap-2 filter-controls">
                         <label for="show">Show</label>
                         <input type="number" id="show" value="6" min="1" max="32">
                         <label for="sort">Sort by</label>
@@ -116,8 +117,9 @@
                         <div class="rating">⭐⭐⭐⭐⭐ <span>36 Customer Reviews</span></div>
 
                         <p class="description">
-                            Embark on a Mars vacation:  red deserts, ancient relics, and towering canyons await.
-                            Enjoy low-gravity hiking, rover trips to Olympus Mons, and stargazing under Phobos and Deimos.
+                            Embark on a Mars vacation: red deserts, ancient relics, and towering canyons await.
+                            Enjoy low-gravity hiking, rover trips to Olympus Mons, and stargazing under Phobos and
+                            Deimos.
                         </p>
 
                         <!--Ticket Options-->
@@ -148,40 +150,54 @@
     </section>
 
     <!--Neptune-->
+
     <section class="neptune" id="neptune">
         <div class="flights-container2">
-            <div class="flights-image2">
-                <img src="../assets/images/flightNeptune.png" alt="Neptune Experience">
-            </div>
-            <div class="flights-details2">
-                <h2>Neptune's Cosmic Dive</h2>
-                <p class="price2">R 45,000.00 </p>
-                <div class="rating2">
-                    ⭐⭐⭐⭐ <span> 34 Customer Reviews</span>
-                </div>
-                <p class="description2">
-                    Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness surreal vistas of swirling
-                    clouds and rings. Experience weightlessness and explore frigid oceans. Engage in thrilling
-                    spacewalks, observe celestial phenomena, and savour gourmet space cuisine. An unforgettable
-                    adventure awaits, blending luxury with cosmic exploration.
-                </p>
-                <div class="flights-options2">
-                    <div class="quantity-container2">
-                        <button class="quantity-btn2">-</button>
-                        <input type="number" value="1" min="1">
-                        <button class="quantity-btn2">+</button>
+            <div class="row justify-content-center align-items-center g-4">
+                <!--Image Column-->
+                <div class="col-12 col-md-5 text-center text-md-start">
+                    <div class="flights-image2">
+                        <img src="../assets/images/flightNeptune.png" alt="Neptune Experience" class="img-fluid">
                     </div>
-                    <button class="book-now2">Book Now</button>
-                    <button class="add-to-cart">Add to Cart</button>
-
                 </div>
-                <hr>
-                <ul class="flights-info2">
-                    <li><strong>SKU:</strong> SS405</li>
-                    <li><strong>Shuttle:</strong> The Voyager</li>
-                    <li><strong>Tags:</strong> Neptune, Commercial, Gourmet Experience</li>
-                    <li><strong>Date:</strong> 4 April - 28 March</li>
-                </ul>
+
+                <!--Details Column-->
+                <div class="col-12 col-md-7">
+                    <div class="flights-details2">
+                        <h2>Neptune's Cosmic Dive</h2>
+                        <p class="price2">R45,000.00</p>
+                        <div class="rating2">⭐⭐⭐⭐ <span>34 Customer Reviews</span></div>
+
+                        <p class="description2">
+                            Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness surreal vistas of
+                            swirling
+                            clouds and rings. Experience weightlessness and explore frigid oceans. Engage in thrilling
+                            spacewalks, observe celestial phenomena, and savour gourmet space cuisine. An unforgettable
+                            adventure awaits, blending luxury with cosmic exploration.
+                        </p>
+
+                        <!--Ticket Options-->
+                        <div class="flights-options2 flex-wrap d-flex align-items-center gap-2">
+                            <div class="quantity-container2">
+                                <button class="quantity-btn2">-</button>
+                                <input type="number" value="1" min="1">
+                                <button class="quantity-btn2">+</button>
+                            </div>
+                            <button class="book-now2">Book Now</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                        <hr>
+
+                        <!--Flight Info-->
+                        <ul class="flights-info2">
+                            <li><strong>SKU:</strong> SS405</li>
+                            <li><strong>Shuttle:</strong> The Voyager</li>
+                            <li><strong>Tags:</strong> Neptune, Commercial, Gourmet Experience</li>
+                            <li><strong>Date:</strong> 4 April - 28 March</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -206,10 +222,12 @@
                         <div class="rating">⭐⭐⭐⭐⭐ <span>48 Customer Reviews</span></div>
 
                         <p class="description">
-                            Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its majestic storms and swirling
-                    atmosphere. Dive into metallic hydrogen oceans. Explore its moons, each a world unto itself. Engage
-                    in gravity surfing, comet chasing, and space excursions. Experience cosmic wonder in luxury,
-                    blending exploration with adventure.
+                            Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its majestic storms and
+                            swirling
+                            atmosphere. Dive into metallic hydrogen oceans. Explore its moons, each a world unto itself.
+                            Engage
+                            in gravity surfing, comet chasing, and space excursions. Experience cosmic wonder in luxury,
+                            blending exploration with adventure.
                         </p>
 
                         <!--Ticket Options-->
@@ -242,39 +260,54 @@
     <!--Saturn-->
     <section class="saturn" id="saturn">
         <div class="flights-container2">
-            <div class="flights-image2">
-                <img src="../assets/images/flightSaturn.png" alt="Saturn Experience">
-            </div>
-            <div class="flights-details2">
-                <h2>Ring Around a Saturn</h2>
-                <p class="price2">R 40,000.00 </p>
-                <div class="rating2">
-                    ⭐⭐⭐⭐⭐ <span> 16 Customer Reviews</span>
-                </div>
-                <p class="description2">
-                    Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer". Marvel at its iconic rings and
-                    turbulent storms. Explore its diverse moons, from icy Enceladus to mysterious Titan, with
-                    activities including rover expeditions and cave exploration. Experience the wonders of the cosmos
-                    amidst luxurious accommodations, where the thrill of discovery intertwines seamlessly with the
-                    excitement of adventure.
-                </p>
-                <div class="flights-options2">
-                    <div class="quantity-container2">
-                        <button class="quantity-btn2">-</button>
-                        <input type="number" value="1" min="1">
-                        <button class="quantity-btn2">+</button>
+            <div class="row justify-content-center align-items-center g-4">
+                <!--Image Column-->
+                <div class="col-12 col-md-5 text-center text-md-start">
+                    <div class="flights-image2">
+                        <img src="../assets/images/flightSaturn.png" alt="Saturn Experience" class="img-fluid">
                     </div>
-                    <button class="book-now2">Book Now</button>
-                    <button class="add-to-cart">Add to Cart</button>
-
                 </div>
-                <hr>
-                <ul class="flights-info2">
-                    <li><strong>SKU:</strong> SS333</li>
-                    <li><strong>Shuttle:</strong> The Explorer</li>
-                    <li><strong>Tags:</strong> Saturn, Luxury, Adventure</li>
-                    <li><strong>Date:</strong> 4 April - 28 March</li>
-                </ul>
+
+                <!--Details Column-->
+                <div class="col-12 col-md-7">
+                    <div class="flights-details2">
+                        <h2>Ring Around a Saturn</h2>
+                        <p class="price2">R40,000.00</p>
+                        <div class="rating2">⭐⭐⭐⭐⭐ <span>16 Customer Reviews</span></div>
+
+                        <p class="description2">
+                            Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer". Marvel at its iconic
+                            rings and
+                            turbulent storms. Explore its diverse moons, from icy Enceladus to mysterious Titan, with
+                            activities including rover expeditions and cave exploration. Experience the wonders of the
+                            cosmos
+                            amidst luxurious accommodations, where the thrill of discovery intertwines seamlessly with
+                            the
+                            excitement of adventure.
+                        </p>
+
+                        <!--Ticket Options-->
+                        <div class="flights-options2 flex-wrap d-flex align-items-center gap-2">
+                            <div class="quantity-container2">
+                                <button class="quantity-btn2">-</button>
+                                <input type="number" value="1" min="1">
+                                <button class="quantity-btn2">+</button>
+                            </div>
+                            <button class="book-now2">Book Now</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                        <hr>
+
+                        <!--Flight Info-->
+                        <ul class="flights-info2">
+                            <li><strong>SKU:</strong> SS333</li>
+                            <li><strong>Shuttle:</strong> The Explorer</li>
+                            <li><strong>Tags:</strong> Saturn, Luxury, Adventure</li>
+                            <li><strong>Date:</strong> 28 March - 4 April</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -299,10 +332,13 @@
                         <div class="rating">⭐⭐⭐⭐⭐ <span>12 Customer Reviews</span></div>
 
                         <p class="description">
-                            Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour. Explore its icy atmosphere
-                    and captivating moons. Experience thrilling zero-gravity excursions, witness mesmerizing auroras,
-                    and immerse yourself in celestial photography workshops. With luxury accommodations and expert
-                    guides, discover the wonders of Uranus in a journey of a lifetime.
+                            Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour. Explore its icy
+                            atmosphere
+                            and captivating moons. Experience thrilling zero-gravity excursions, witness mesmerizing
+                            auroras,
+                            and immerse yourself in celestial photography workshops. With luxury accommodations and
+                            expert
+                            guides, discover the wonders of Uranus in a journey of a lifetime.
                         </p>
 
                         <!--Ticket Options-->
@@ -335,96 +371,107 @@
     <!--Moon-->
     <section class="moon" id="moon">
         <div class="flights-container2">
-            <div class="flights-image2">
-                <img src="../assets/images/flightMoon.png" alt="Moon Experience">
-            </div>
-            <div class="flights-details2">
-                <h2>Moonlight Meander</h2>
-                <p class="price2">R 15.000.00 </p>
-                <div class="rating2">
-                    ⭐⭐⭐⭐ <span> 43 Customer Reviews</span>
-                </div>
-                <p class="description2">
-                    Experience the ultimate lunar getaway with our "Moonlight Meander" package. Depart Earth's
-                    atmosphere aboard the "Celestial Cruiser" for a short but unforgettable journey to the Moon. Enjoy
-                    lunar walks, breathtaking views of Earthrise, and stargazing under the moon's serene glow. Immerse
-                    yourself in luxury accommodation amidst the tranquility of space.
-                </p>
-                <div class="flights-options2">
-                    <div class="quantity-container2">
-                        <button class="quantity-btn2">-</button>
-                        <input type="number" value="1" min="1">
-                        <button class="quantity-btn2">+</button>
+            <div class="row justify-content-center align-items-center g-4">
+                <!--Image Column-->
+                <div class="col-12 col-md-5 text-center text-md-start">
+                    <div class="flights-image2">
+                        <img src="../assets/images/flightMoon.png" alt="Moon Experience" class="img-fluid">
                     </div>
-                    <button class="book-now2">Book Now</button>
-                    <button class="add-to-cart">Add to Cart</button>
-
                 </div>
-                <hr>
-                <ul class="flights-info2">
-                    <li><strong>SKU:</strong> SS451</li>
-                    <li><strong>Shuttle:</strong> The Voyager</li>
-                    <li><strong>Tags:</strong> Moon, Commercial, Romantic</li>
-                    <li><strong>Date:</strong> 5 August - 12 August</li>
-                </ul>
+
+                <!--Details Column-->
+                <div class="col-12 col-md-7">
+                    <div class="flights-details2">
+                        <h2>Moonlight Meander</h2>
+                        <p class="price2">R15,000.00</p>
+                        <div class="rating2">⭐⭐⭐⭐ <span>43 Customer Reviews</span></div>
+
+                        <p class="description2">
+                            Experience the ultimate lunar getaway with our "Moonlight Meander" package. Depart Earth's
+                            atmosphere aboard the "Celestial Cruiser" for a short but unforgettable journey to the Moon.
+                            Enjoy
+                            lunar walks, breathtaking views of Earthrise, and stargazing under the moon's serene glow.
+                            Immerse
+                            yourself in luxury accommodation amidst the tranquility of space.
+                        </p>
+
+                        <!--Ticket Options-->
+                        <div class="flights-options2 flex-wrap d-flex align-items-center gap-2">
+                            <div class="quantity-container2">
+                                <button class="quantity-btn2">-</button>
+                                <input type="number" value="1" min="1">
+                                <button class="quantity-btn2">+</button>
+                            </div>
+                            <button class="book-now2">Book Now</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                        <hr>
+
+                        <!--Flight Info-->
+                        <ul class="flights-info2">
+                            <li><strong>SKU:</strong> SS451</li>
+                            <li><strong>Shuttle:</strong> The Voyager</li>
+                            <li><strong>Tags:</strong> Moon, Commercial, Romantic</li>
+                            <li><strong>Date:</strong> 5 August - 12 August</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="view-cart-container">
-            <!--As stipulated in the assignment brief: Below all the flights there is a non-functional view cart button-->
-            <button class="view-cart">View Cart</button>
         </div>
     </section>
 
- <!--The footer-->
+    <!--The footer-->
     <!--As stipulated in the assignment brief: Each page contains a uniform footer section-->
 
     <div class="container">
 
         <div class="row justify-content-between align-items-start text-center text-md-start pt-5">
-        <div class="col-12 col-md-4 mb-4 mb-md-0 footer-left">
-            <!--As stipulated in the assignment brief: The left well contains the application logo, and below it the copyright for the website will be displayed-->
-            <img src="../assets/images/logo.png" alt="Red Planet Ventures Logo">
-            <p>Offering unforgettable trips to explore planets in our solar system.</p>
-        </div>
+            <div class="col-12 col-md-4 mb-4 mb-md-0 footer-left">
+                <!--As stipulated in the assignment brief: The left well contains the application logo, and below it the copyright for the website will be displayed-->
+                <img src="../assets/images/logo.png" alt="Red Planet Ventures Logo">
+                <p>Offering unforgettable trips to explore planets in our solar system.</p>
+            </div>
 
-        <!--As stipulated in the assignment brief: The footer also contains links to the different pages of the website-->
-        <div class="col-12 col-md-4 mb-4 mb-md-0 footer-center">
-            <h4>Company</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="flights.html">Flights</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </div>
+            <!--As stipulated in the assignment brief: The footer also contains links to the different pages of the website-->
+            <div class="col-12 col-md-4 mb-4 mb-md-0 footer-center">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flights.html">Flights</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
 
-        <div class="col-12 col-md-4 footer-right">
-            <h4>Social Media Links</h4>
-            <div class="social-icons justify-content-md-center justify-content-lg-start">
-                <!--As stipulated in the assignment brief: The footer contains social media links to Open window's respective social media pages, upon the user clicking on the social media icons-->
-                <!--All the social media icons link to Open windows corresponding social media pages, Id give them a follow but I have no desire to download facebook, or any social media for that matter-->
-                <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><img
-                        src="../assets/images/smInstagram.png" alt="Instagram"></a>
-                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fopen_window_"><img
-                        src="../assets/images/smX.png" alt="X"></a>
-                <a href="https://www.tiktok.com/@open_window_"><img src="../assets/images/smTicktock.png"
-                        alt="TikTok"></a>
-                <a href="https://www.facebook.com/theopenwindow/"><img src="../assets/images/smFacebook.png"
-                        alt="Facebook"></a>
+            <div class="col-12 col-md-4 footer-right">
+                <h4>Social Media Links</h4>
+                <div class="social-icons justify-content-md-center justify-content-lg-start">
+                    <!--As stipulated in the assignment brief: The footer contains social media links to Open window's respective social media pages, upon the user clicking on the social media icons-->
+                    <!--All the social media icons link to Open windows corresponding social media pages, Id give them a follow but I have no desire to download facebook, or any social media for that matter-->
+                    <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><img
+                            src="../assets/images/smInstagram.png" alt="Instagram"></a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fopen_window_"><img
+                            src="../assets/images/smX.png" alt="X"></a>
+                    <a href="https://www.tiktok.com/@open_window_"><img src="../assets/images/smTicktock.png"
+                            alt="TikTok"></a>
+                    <a href="https://www.facebook.com/theopenwindow/"><img src="../assets/images/smFacebook.png"
+                            alt="Facebook"></a>
+                </div>
             </div>
         </div>
     </div>
-    </div>
 
-    <div class="footer-cottom container d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
+    <div
+        class="footer-cottom container d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
         <p>All Rights Reserved @ Open Window 2024</p>
         <div class="footer-links">
             <a href="#">Terms & Conditions</a>
             <a href="#">Privacy & Policy</a>
         </div>
     </div>
-    
-</footer>
+
+    </footer>
 
 </body>
 
