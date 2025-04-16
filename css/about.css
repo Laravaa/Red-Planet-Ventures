@@ -1,198 +1,403 @@
 /*As stipulated in the assignment brief: The overall layout, placement of UI elements and content for the website was adhered to in relation to the example images */
 
 @font-face {
-    font-family: "Porter sans";
-    src: url("../assets/fonts/porter_sans_block/porter-sans-inline-block.otf") format("opentype");
-    font-weight: normal;
-    font-size: normal;
-  }
-  
-  /*I'm embarrassed to admit how long it took me to figure out importing google fonts, to this day I don't think I imported everything I should've*/
-  @font-face {
-    font-family: "Poppins";
-    src: url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-    font-weight: normal;
-  }
-  
-  @font-face {
-    font-family: "Poppins";
-    src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-    font-weight: normal;
-  }
-  
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  /* For some reason my nav bar is displaying as kind of a frosted white rather than properly transparent white? I'm not sure what I'm missing there but I'll fix that when I'm done with the website and making finishing touches*/
-  .navbar {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    background-color: #ffffffa9;
-    padding: 15px 0;
+  font-family: "Porter sans";
+  src: url("../assets/fonts/porter_sans_block/porter-sans-inline-block.otf") format("opentype");
+  font-weight: normal;
+  font-size: normal;
+}
+
+/*I'm embarrassed to admit how long it took me to figure out importing google fonts, to this day I don't think I imported everything I should've*/
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* For some reason my nav bar is displaying as kind of a frosted white rather than properly transparent white? I'm not sure what I'm missing there but I'll fix that when I'm done with the website and making finishing touches*/
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: #ffffffa9;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 40px;
+  padding-left: 30px;
+}
+
+.navbar ul {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: medium;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #e51728;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.search-container select {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 8px;
+  background-color: white;
+  color: black;
+}
+
+.header {
+  height: 40vh;
+  background-image: url("../assets/images/headerbackBack.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  text-shadow: none !important;
+  position: relative;
+}
+
+.header h1 {
+  font-family: "Porter Sans", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  display: block;
+}
+
+.header h1 span {
+  display: block;
+}
+
+.history {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 100vh;
+  padding: 50px;
+  gap: 100px;
+}
+
+@media(max-width: 768px) {
+  .history {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 40px;
+    height: auto;
     text-align: center;
-    z-index: 1000;
-    border-radius: 25px;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar .logo img {
-    height: 40px;
-    padding-left: 30px;
-  }
-  
-  .navbar ul {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .navbar ul li {
-    display: inline;
-  }
-  
-  .navbar ul li a {
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: medium;
-    color: black;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: color 0.3s;
-  }
-  
-  .navbar ul li a.active,
-  .navbar ul li a:hover {
-    color: #e51728;
-  }
-  
-  .search-container {
-    display: flex;
-    align-items: center;
-    padding-right: 30px;
-  }
-  
-  .search-container select{
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    border-radius: 10px;
-    border: 1px solid white;
-    padding: 8px;
-    background-color: white;
-    color: black;
   }
 
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  @media(max-width: 768px) {
-    .social-icons{
-      justify-content: center;
-    }
-  }
-  
-  .footer-left {
-    max-width: 300px;
-    text-align: left;
-  }
-  
-  .footer-left img {
-    width: 150px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-left p {
+  .history-text {
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    color: grey;
+    max-width: 100%;
+    color: white;
   }
-  
-  .footer-center h4,
-  .footer-right h4 {
+
+  .history-text h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 32px;
     font-weight: bold;
-    color: black;
-    margin-bottom: 10px;
+    color: #45016d;
   }
-  
-  .footer-center ul {
-    list-style: none;
-    padding: 0;
+
+  .history-image img {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 350px;
+    height: auto;
   }
-  
-  .footer-center ul li {
-    margin: 5px 0;
+}
+
+.history-text {
+  max-width: 500px;
+  color: white;
+  text-align: left;
+}
+
+.history-text h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #55daeb;
+  font-weight: medium;
+  text-transform: uppercase;
+}
+
+.history-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #45016d;
+}
+
+.history-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: grey;
+}
+
+.history-image {
+  display: inline-block;
+}
+
+.history-image img {
+  width: 500px;
+  border-radius: 15px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #45016d;
+  height: 100vh;
+  padding: 50px;
+  gap: 100px;
+}
+
+@media(max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 40px;
+    height: auto;
+    text-align: center;
   }
-  
-  .footer-center ul li a {
-    text-decoration: none;
-    color: grey;
-    font-size: 14px;
+
+  .about-text {
     font-family: "Poppins", sans-serif;
+    max-width: 100%;
+    color: white;
   }
-  
-  .footer-center ul li a:hover {
-    color: black;
+
+  .about-text h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
   }
-  
+
+  .about-image img {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+.about-text {
+  max-width: 500px;
+  color: white;
+  text-align: left;
+}
+
+.about-text h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #55daeb;
+  font-weight: medium;
+  text-transform: uppercase;
+}
+
+.about-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.about-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: grey;
+}
+
+.about-image {
+  display: inline-block;
+}
+
+.about-image img {
+  width: 500px;
+  border-radius: 15px;
+}
+
+.custom-get-in-touch {
+  font-family: "Poppins", sans-serif;
+  background-color: #e51728;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: 0.3s;
+  width: auto;
+  display: inline-block;
+}
+
+/*I know this wasn't necessary but I thought it would be a funky little touch to add. I don't know if I'll consistently do this do every button. I'll probably do it though. It's cute*/
+.get-in-touch:hover {
+  background-color: #c41424;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media(max-width: 768px) {
   .social-icons {
-    display: flex;
-    gap: 15px;
+    justify-content: center;
   }
-  
-  .social-icons a img {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-  }
-  
-  .footer-bottom {
-    margin-top: 20px;
-    border-top: 1px solid white;
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-bottom p {
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    color: grey;
-  }
-  
-  .footer-links {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .footer-links a {
-    text-decoration: none;
-    font-size: 12px;
-    color: grey;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .footer-links a:hover {
-    color: black;
-  }
+}
+
+.footer-left {
+  max-width: 300px;
+  text-align: left;
+}
+
+.footer-left img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: grey;
+}
+
+.footer-center h4,
+.footer-right h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center ul li {
+  margin: 5px 0;
+}
+
+.footer-center ul li a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-center ul li a:hover {
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: grey;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 12px;
+  color: grey;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-links a:hover {
+  color: black;
+}

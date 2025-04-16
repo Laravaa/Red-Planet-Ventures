@@ -83,7 +83,7 @@ html {
 
 }
 
-.search-container select{
+.search-container select {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   border-radius: 10px;
@@ -136,7 +136,7 @@ html {
 }
 
 /*As stipulated in the assignment brief: Below the header image there is a non-functional slider of a featured trip with an image of the planet on the left, and a short description on the right.*/
-.carousel-inner img{
+.carousel-inner img {
   border-radius: 10px;
   max-height: 500px;
   object-fit: cover;
@@ -184,9 +184,9 @@ html {
   cursor: pointer;
   border-radius: 10px;
   margin-top: 20px;
-  transition: 0.3s ;
-  width: auto ;
-  display: inline-block ;
+  transition: 0.3s;
+  width: auto;
+  display: inline-block;
 }
 
 /*I know this wasn't necessary but I thought it would be a funky little touch to add. I don't know if I'll consistently do this do every button. I'll probably do it though. It's cute*/
@@ -206,8 +206,8 @@ html {
   gap: 100px;
 }
 
-@media(max-width: 768px){
-  .shuttles{
+@media(max-width: 768px) {
+  .shuttles {
     flex-direction: column;
     padding: 30px 20px;
     gap: 40px;
@@ -295,17 +295,17 @@ html {
   margin-bottom: 40px;
 }
 
-@media(max-width: 768px){
-  .upcoming-trips{
+@media(max-width: 768px) {
+  .upcoming-trips {
     height: auto;
     padding-bottom: 60px;
   }
 
-  .upcoming-trips h2{
+  .upcoming-trips h2 {
     font-size: 32px;
   }
 
-  .trip-card p{
+  .trip-card p {
     font-size: 14px;
   }
 }
@@ -380,7 +380,7 @@ footer {
 }
 
 @media(max-width: 768px) {
-  .social-icons{
+  .social-icons {
     justify-content: center;
   }
 }

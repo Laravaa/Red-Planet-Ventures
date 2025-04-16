@@ -36,11 +36,11 @@
             <a class="navbar-brand" href="index.html">
                 <img src="../assets/images/logo.png" alt="Logo" height="40">
             </a>
-    
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navContent">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <!--Iv'e set up the nav bar to take note of the active page, and keep that link highlighted-->
@@ -49,7 +49,7 @@
                     <li class="nav-item"><a class="nav-link" href="flights.html">Flights</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-    
+
                 <!--As stipulated in the assignment brief: To the right of the nav bar there is a non-functional search bar-->
                 <!--Ive updated the code for the search bar, making it into a dropdown that will link to certain parts of the webpage. I did this using bootstrap in light of phase 2's assignment-->
                 <form class="d-flex" role="search">
@@ -60,7 +60,7 @@
                         <option value="#upcoming-trips">Book a Trip</option>
                     </select>
                 </form>
-    
+
             </div>
         </div>
     </nav>
@@ -75,39 +75,43 @@
     <!--The featured trips section-->
     <!--As stipulated in the assignment brief: Below the header image there is a non-functional slider of a featured trip with an image of the planet on the left, and a short description on the right.-->
     <section class="featured py-5" id="featured">
-    
+
         <div class="container">
             <div class="row align-items-center gy-4">
                 <!--Carousel: Planet Images-->
                 <div class="col-md-6">
                     <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-    
+
                             <div class="carousel-item active">
-                                <img src="../assets/images/marsSliderClipped1.png" class="d-block w-100" alt="Mars Trip">
+                                <img src="../assets/images/marsSliderClipped1.png" class="d-block w-100"
+                                    alt="Mars Trip">
                             </div>
-    
+
                             <div class="carousel-item">
-                                <img src="../assets/images/marsSliderClipped2.png" class="d-block w-100" alt="Mars Trip 2">
+                                <img src="../assets/images/marsSliderClipped2.png" class="d-block w-100"
+                                    alt="Mars Trip 2">
                             </div>
-    
+
                             <div class="carousel-item">
-                                <img src="../assets/images/marsSliderClipped3.png" class="d-block w-100" alt="Mars Trip 3">
+                                <img src="../assets/images/marsSliderClipped3.png" class="d-block w-100"
+                                    alt="Mars Trip 3">
                             </div>
-    
+
                             <div class="carousel-item">
-                                <img src="../assets/images/marsSliderClipped14.png" class="d-block w-100" alt="Mars Trip 4">
+                                <img src="../assets/images/marsSliderClipped14.png" class="d-block w-100"
+                                    alt="Mars Trip 4">
                             </div>
-    
+
                         </div>
-    
+
                         <!--Arrows-->
                         <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-    
+
                         <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -115,7 +119,7 @@
                         </button>
                     </div>
                 </div>
-    
+
                 <div class="col-md-6">
                     <div class="featured-text text-white">
                         <h3>Featured Trip</h3>
@@ -130,7 +134,7 @@
                         </a>
                     </div>
                 </div>
-    
+
             </div>
         </div>
         </div>
@@ -193,16 +197,16 @@
         </div>
 
         <a href="flights.html">
-        <button class="book-trip">Book a Trip Now</button>
-    </a>
+            <button class="book-trip">Book a Trip Now</button>
+        </a>
     </section>
 
     <!--The footer-->
     <!--As stipulated in the assignment brief: Each page contains a uniform footer section-->
 
-        <div class="container">
+    <div class="container">
 
-            <div class="row justify-content-between align-items-start text-center text-md-start pt-5">
+        <div class="row justify-content-between align-items-start text-center text-md-start pt-5">
             <div class="col-12 col-md-4 mb-4 mb-md-0 footer-left">
                 <!--As stipulated in the assignment brief: The left well contains the application logo, and below it the copyright for the website will be displayed-->
                 <img src="../assets/images/logo.png" alt="Red Planet Ventures Logo">
@@ -236,16 +240,17 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 
-        <div class="footer-cottom container d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
-            <p>All Rights Reserved @ Open Window 2024</p>
-            <div class="footer-links">
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy & Policy</a>
-            </div>
+    <div
+        class="footer-cottom container d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
+        <p>All Rights Reserved @ Open Window 2024</p>
+        <div class="footer-links">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy & Policy</a>
         </div>
-        
+    </div>
+
     </footer>
 
 </body>
