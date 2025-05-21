@@ -467,6 +467,26 @@
         </div>
     </div>
 
+    <!--Adding the Cart Modal HTML-->
+    <div class = "modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class ="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-white bg-black">
+                    <ul id="cart-items" class="list-group mb-3"></ul>
+                    <h5 class="text-end">Total: <span id="cart-total">R0.00</span></h5>
+                </div>
+                <div class="modal-footer bg-dark text-white">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Continue Shopping</button>
+                    <a href="index.html" class="btn btn-danger">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div
         class="footer-cottom container d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
         <p>All Rights Reserved @ Open Window 2024</p>
