@@ -529,6 +529,23 @@ html {
     background-color: #c41424;
 }
 
+#cartModal .modal-content {
+    background-color: black;
+    border: 2px solid #c41424;
+    color: white;
+}
+
+#cartModal .modal-header, #cartModal .modal-footer{
+    border: none;
+    background: black;
+}
+
+#cartModal input[type="number"]{
+    background: Black;
+    border: 1px solid grey;
+    color: white;
+}
+
 .footer-container {
     display: flex;
     justify-content: space-between;
