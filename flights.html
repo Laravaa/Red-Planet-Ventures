@@ -468,12 +468,13 @@
     </div>
 
     <!--Adding the Cart Modal HTML-->
-    <div class = "modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class ="modal-content">
+            <div class="modal-content">
                 <div class="modal-header bg-dark text-white">
                     <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-white bg-black">
                     <ul id="cart-items" class="list-group mb-3"></ul>
@@ -486,6 +487,68 @@
             </div>
         </div>
     </div>
+
+    <!--Adding Javascript to make the modal work-->
+    <script>
+        const cart = [];
+
+        document.querySelectorAll('.add-to-cart').forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                const container = btn.closest('.flights-details, .flights-details2');
+                const title = container.querySelector('h2').innerText;
+                const priceText = container.querySelector('.price, .price2').innerText;
+                const quantity = parseInt(container.querySelector('input[type="number"]').value);
+                const price = parseFloat(priceText.replace(/[^\d]/g, ''));
+
+                const existingItem = cart.find(item => item.title === title);
+                if (existingItem) {
+                    existingItem.quantity += quantity;
+                } else {
+                    cart.push({ title, price, quantity });
+                }
+
+                updateCartModal();
+                new bootstrap.Modal(document.getElementById('cartModal')).show();
+            });
+        });
+
+        function updateCartModal() {
+            const cartItems = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                const li = document.createElement('li');
+                li.className = 'list-group-item d-flex justify-content-between align-items-center bg-dark text-white';
+                li.innerHTML = `
+                    <div>
+                        <strong>${item.title}</strong><br>
+                        R${item.price.toFixed(2)} x
+                        <input type="number" min="1" value="${item.quantity}" data-index="${index}" style="width: 60px;">
+                    </div>
+                    <span>R${itemTotal.toFixed(2)}</span>
+                    `;
+                cartItems.appendChild(li);
+            });
+
+            cartItems.querySelectorAll('input[type="number"]').forEach(input => {
+                input.addEventListener('input', (e) => {
+                    const idx = e.target.dataset.index;
+                    const newQty = parseInt(e.target.value);
+                    if (newQty > 0) {
+                        cart[idx].quantity = newQty;
+                        updateCartModal();
+                    }
+                });
+            });
+
+            cartTotal.innerText = `R${total.toFixed(2)}`;
+        }
+    </script>
 
     <div
         class="footer-cottom container d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
