@@ -488,8 +488,33 @@
         </div>
     </div>
 
-    <!--Adding Javascript to make the modal work-->
+    <!--Adding Javascript to make the modal work and to make the + - inputs functional-->
     <script>
+        document.querySelectorAll('.quantity-container .quantity-btn').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const input = btn.parentElement.querySelector('input');
+                let value = parseInt(input.value);
+                if (btn.textContent === '+') {
+                    input.value = value + 1;
+                }else if (btn.textContent === '-' && value > 1) {
+                    input.value = value - 1;
+                }
+            });
+        });
+
+        document.querySelectorAll('quantity-container2 .quantity-btn2').forEach((btn) => {
+            btn.addEventListener('click', () =>{
+                const input = btn.parentElement.querySelector('input');
+                let value = parseInt(input.value);
+                if (btn.textContent === '+') {
+                    input.value = value + 1;
+                }else if(btn.textContent === '-'){
+                    input.value = value - 1;
+                }
+            });
+        });
+
+        
         const cart = [];
 
         document.querySelectorAll('.add-to-cart').forEach((btn, index) => {
@@ -498,7 +523,7 @@
                 const title = container.querySelector('h2').innerText;
                 const priceText = container.querySelector('.price, .price2').innerText;
                 const quantity = parseInt(container.querySelector('input[type="number"]').value);
-                const price = parseFloat(priceText.replace(/[^\d]/g, ''));
+                const price = parseFloat(priceText.replace(/[^0-9.]/g, ''));
 
                 const existingItem = cart.find(item => item.title === title);
                 if (existingItem) {
@@ -510,6 +535,12 @@
                 updateCartModal();
                 new bootstrap.Modal(document.getElementById('cartModal')).show();
             });
+        });
+
+        //Adding view cart handling logic
+        document.querySelector('.view-cart').addEventListener('click', () => {
+            updateCartModal();
+            new bootstrap.Modal(document.getElementId('cartModal')).show();
         });
 
         function updateCartModal() {
