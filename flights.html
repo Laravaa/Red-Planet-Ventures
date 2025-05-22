@@ -481,7 +481,8 @@
                     <h5 class="text-end">Total: <span id="cart-total">R0.00</span></h5>
                 </div>
                 <div class="modal-footer bg-dark text-white">
-                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Continue
+                        Shopping</button>
                     <a href="index.html" class="btn btn-danger">Checkout</a>
                 </div>
             </div>
@@ -496,25 +497,25 @@
                 let value = parseInt(input.value);
                 if (btn.textContent === '+') {
                     input.value = value + 1;
-                }else if (btn.textContent === '-' && value > 1) {
+                } else if (btn.textContent === '-' && value > 1) {
                     input.value = value - 1;
                 }
             });
         });
 
-        document.querySelectorAll('quantity-container2 .quantity-btn2').forEach((btn) => {
-            btn.addEventListener('click', () =>{
+        document.querySelectorAll('.quantity-container2 .quantity-btn2').forEach((btn) => {
+            btn.addEventListener('click', () => {
                 const input = btn.parentElement.querySelector('input');
                 let value = parseInt(input.value);
                 if (btn.textContent === '+') {
                     input.value = value + 1;
-                }else if(btn.textContent === '-'){
+                } else if (btn.textContent === '-') {
                     input.value = value - 1;
                 }
             });
         });
 
-        
+
         const cart = [];
 
         document.querySelectorAll('.add-to-cart').forEach((btn, index) => {

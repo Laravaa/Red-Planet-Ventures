@@ -535,12 +535,13 @@ html {
     color: white;
 }
 
-#cartModal .modal-header, #cartModal .modal-footer{
+#cartModal .modal-header,
+#cartModal .modal-footer {
     border: none;
     background: black;
 }
 
-#cartModal input[type="number"]{
+#cartModal input[type="number"] {
     background: Black;
     border: 1px solid grey;
     color: white;
