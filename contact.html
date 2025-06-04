@@ -143,7 +143,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="contact-form p-4 text-white rounded">
                         <h2 class="text-center mb-4">Send Us a Message</h2>
-                        <form action="submit_form.php" method="POST">
+                        <form id="contactForm">
                             <div class="mb-3">
                                 <label for="name">Your Name</label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Abc"
@@ -169,7 +169,7 @@
                             </div>
 
                             <!--Changing the submit button to be functional-->
-                            <button type="submit" class="submit-btn" id="submitBtn" disabled>Submit</button>
+                            <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -179,8 +179,8 @@
     </section>
 
     <!--Thank you for your message modal-->
-    <div id = "thankYouModal" style="display:none; position: fixed; top:0; left:0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); align-items:center; justify-content: center; z-index:9999;">
-        <div style="background: white; padding: 2rem; border-radius:10px; text-align: center; max-width:400px; width: 90%">
+        <div id="thankYouModal" style="display:none; position: fixed; top:0; left:0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); align-items:center; justify-content: center; z-index:9999; display: none; flex-direction: column;">
+            <div style="background: white; padding: 2rem; border-radius:10px; text-align: center; max-width:400px; width: 90%">
             <h2>Thank You!</h2>
             <p>Your message has been sent successfully. We'll be in touch soon!🚀</p>
             <button id = "backToContactBtn" class="submit-btn">Back to Contact</button>
@@ -241,42 +241,23 @@
 
     <!--Adding JS for live form checking-->
     <script>
-        document.adDEventListener('DOMContentLoaded', () => {
-            const form = document.querySelector('form');
-            const submitBtn = document.getElementById('submitBtn');
-            const inputs = form.querySelectorAll('input, textarea');
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+    const modal = document.getElementById("thankYouModal");
+    const backBtn = document.getElementById("backToContactBtn");
 
-            const checkFormValidity = () => {
-                let allFilled = true;
-                inputs.forEach(input => {
-                    if (input.value.trim() === '') {
-                        allFilled = false;
-                    }
-                });
-                submitBtn.disabled = !allFilled;
-            };
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent form from refreshing the page
+      modal.style.display = "flex"; // Show modal
+    });
 
-                inputs.forEach(Input => {
-                    input.addEventListener('input', checkFormValidity);
-                });
+    backBtn.addEventListener("click", function () {
+      modal.style.display = "none"; // Hide modal when back button is clicked
+      form.reset(); // Optional: Reset the form
+    });
+  });
+</script>
 
-                //Prevent the actual form submission and show modal instead
-                form.addEventListener('submit', (e) => {
-                    e.preventDefault(); //Prevent actual submission
-                    showModal();
-                });
-
-                function showModal() {
-                    const modal = document.getElementById('thankYouModal');
-                    modal.style.display = 'flex';
-                }
-
-                document.getElementById('backToContactBtn').addEventListener('click', () => {
-                    document.getElementById('thankYouModal').style.display = 'none';
-                    window.location.href = '#contact'; //scroll to contact section
-                });
-        });
-    </script>
 
 </body>
 
