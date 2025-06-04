@@ -179,11 +179,13 @@
     </section>
 
     <!--Thank you for your message modal-->
-        <div id="thankYouModal" style="display:none; position: fixed; top:0; left:0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); align-items:center; justify-content: center; z-index:9999; display: none; flex-direction: column;">
-            <div style="background: white; padding: 2rem; border-radius:10px; text-align: center; max-width:400px; width: 90%">
+    <div id="thankYouModal"
+        style="display:none; position: fixed; top:0; left:0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); align-items:center; justify-content: center; z-index:9999; display: none; flex-direction: column;">
+        <div
+            style="background: white; padding: 2rem; border-radius:10px; text-align: center; max-width:400px; width: 90%">
             <h2>Thank You!</h2>
             <p>Your message has been sent successfully. We'll be in touch soon!🚀</p>
-            <button id = "backToContactBtn" class="submit-btn">Back to Contact</button>
+            <button id="backToContactBtn" class="submit-btn">Back to Contact</button>
         </div>
     </div>
 
@@ -241,22 +243,22 @@
 
     <!--Adding JS for live form checking-->
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
-    const modal = document.getElementById("thankYouModal");
-    const backBtn = document.getElementById("backToContactBtn");
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contactForm");
+            const modal = document.getElementById("thankYouModal");
+            const backBtn = document.getElementById("backToContactBtn");
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Prevent form from refreshing the page
-      modal.style.display = "flex"; // Show modal
-    });
+            form.addEventListener("submit", function (e) {
+                e.preventDefault(); // Prevent form from refreshing the page
+                modal.style.display = "flex"; // Show modal
+            });
 
-    backBtn.addEventListener("click", function () {
-      modal.style.display = "none"; // Hide modal when back button is clicked
-      form.reset(); // Optional: Reset the form
-    });
-  });
-</script>
+            backBtn.addEventListener("click", function () {
+                modal.style.display = "none"; // Hide modal when back button is clicked
+                form.reset(); // Optional: Reset the form
+            });
+        });
+    </script>
 
 
 </body>
