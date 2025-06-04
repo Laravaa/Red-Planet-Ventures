@@ -191,6 +191,15 @@ html {
   font-size: 14px;
 }
 
+/*Changing the styling of the button to initially be transparent*/
+.submit-btn:disabled{
+  background-color: transparent;
+  border: 2px dashed #e51728;
+  color: #e51728;
+  cursor: not-allowed;
+  transition: all 0.3s ease;
+}
+
 .submit-btn {
   width: 100%;
   padding: 10px;
